@@ -1,0 +1,103 @@
+/* Dark is the default brand theme. Light overrides live in [data-theme='light'] below.
+   The theme is chosen by src/state/Theme.jsx (and an inline script in index.html to avoid a flash). */
+:root {
+  color-scheme: dark;
+
+  /* Surfaces */
+  --bg: #171323;
+  --surface: #201a30;
+  --card: #29223b;
+  --card-hover: #30284a;
+  --card-inset: #231d34;
+  --topbar-bg: rgba(23, 19, 35, 0.82);
+  --bg-glow: rgba(124, 92, 240, 0.16);
+
+  /* Accents */
+  --primary: #a78bfa;
+  --primary-strong: #7c5cf0;
+  --primary-soft: rgba(167, 139, 250, 0.14);
+  --mint: #83e6c0;
+  --mint-soft: rgba(131, 230, 192, 0.14);
+  --warm: #f2b8a2;
+  --warm-soft: rgba(242, 184, 162, 0.14);
+  --danger: #f28ba4;
+  --danger-soft: rgba(242, 139, 164, 0.14);
+
+  /* Text on filled accents */
+  --on-primary: #190f33;
+  --on-mint: #12301f;
+  --on-warm: #3a1f12;
+
+  /* Text */
+  --text: #f7f4ff;
+  --muted: #aaa2be;
+  --faint: #7d7593;
+
+  /* Lines & fills */
+  --border: rgba(224, 214, 255, 0.1);
+  --border-strong: rgba(224, 214, 255, 0.2);
+  --track: rgba(247, 244, 255, 0.09);
+  --nav-active-bg: linear-gradient(135deg, rgba(143, 111, 242, 0.5), rgba(167, 139, 250, 0.28));
+  --nav-active-ring: rgba(196, 176, 255, 0.28);
+  --overlay: rgba(8, 5, 18, 0.7);
+
+  /* Shape */
+  --radius-sm: 8px;
+  --radius: 14px;
+  --radius-lg: 20px;
+  --shadow-card: 0 10px 30px -14px rgba(8, 4, 20, 0.7);
+  --glow-primary: 0 0 28px -6px rgba(167, 139, 250, 0.55);
+  --glow-mint: 0 0 14px -2px rgba(131, 230, 192, 0.55);
+  --gradient-primary: linear-gradient(135deg, #8f6ff2 0%, #a78bfa 55%, #b79dff 100%);
+
+  /* Type */
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+
+  /* Layout */
+  --sidebar-w: 248px;
+  --content-max: 1120px;
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+
+  --bg: #f5f2fc;
+  --surface: #ece7f8;
+  --card: #ffffff;
+  --card-hover: #f6f2ff;
+  --card-inset: #f1edfb;
+  --topbar-bg: rgba(245, 242, 252, 0.85);
+  --bg-glow: rgba(124, 92, 240, 0.12);
+
+  --primary: #6c48e6;
+  --primary-strong: #5b38d4;
+  --primary-soft: rgba(108, 72, 230, 0.1);
+  --mint: #148a67;
+  --mint-soft: rgba(20, 138, 103, 0.12);
+  --warm: #b4532f;
+  --warm-soft: rgba(180, 83, 47, 0.11);
+  --danger: #c8334f;
+  --danger-soft: rgba(200, 51, 79, 0.1);
+
+  --on-primary: #ffffff;
+  --on-mint: #ffffff;
+  --on-warm: #ffffff;
+
+  --text: #1e1633;
+  --muted: #5f5779;
+  --faint: #8a82a3;
+
+  --border: rgba(60, 40, 120, 0.12);
+  --border-strong: rgba(60, 40, 120, 0.24);
+  --track: rgba(60, 40, 120, 0.1);
+  --nav-active-bg: linear-gradient(135deg, rgba(108, 72, 230, 0.16), rgba(167, 139, 250, 0.14));
+  --nav-active-ring: rgba(108, 72, 230, 0.32);
+  --overlay: rgba(30, 22, 51, 0.45);
+
+  --shadow-card: 0 8px 24px -14px rgba(60, 40, 120, 0.28);
+  --glow-primary: 0 6px 18px -8px rgba(108, 72, 230, 0.55);
+  --glow-mint: 0 0 10px -2px rgba(20, 138, 103, 0.4);
+  --gradient-primary: linear-gradient(135deg, #6c48e6 0%, #8260f0 100%);
+}

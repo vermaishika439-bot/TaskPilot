@@ -1,0 +1,42 @@
+﻿# Secrets and environment files
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.venv_*/
+venv/
+ENV/
+
+# Frontend dependencies and builds
+node_modules/
+dist/
+build/
+
+# Local databases and backups
+*.db
+*.sqlite
+*.sqlite3
+*.bak
+*.zip
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Secret environment files
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
